@@ -1,0 +1,1635 @@
+/* BEGIN FONTS */
+
+.special-elite-regular {
+    font-family: "Special Elite", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.limelight-regular {
+    font-family: "Limelight", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.fascinate-regular {
+    font-family: "Fascinate", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.monoton-regular {
+    font-family: "Monoton", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.kavoon-regular {
+    font-family: "Kavoon", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.rubik-wet-paint-regular {
+    font-family: "Rubik Wet Paint", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.lobster-regular {
+    font-family: "Lobster", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.pacifico-regular {
+    font-family: "Pacifico", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.cherry-bomb-one-regular {
+    font-family: "Cherry Bomb One", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.diplomata-sc-regular {
+    font-family: "Diplomata SC", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.bungee-hairline-regular {
+    font-family: "Bungee Hairline", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+.condiment-regular {
+    font-family: "Condiment", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.meddon-regular {
+    font-family: "Meddon", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.rubik-glitch-regular {
+    font-family: "Rubik Glitch", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.rubik-puddles-regular {
+    font-family: "Rubik Puddles", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.blaka-regular {
+    font-family: "Blaka", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+/* END FONTS */
+
+
+
+html,
+body {
+    background-color: rgb(11, 30, 40);
+    margin: 0;
+    /* optional but common to remove default margin */
+    padding: 0;
+    /* optional */
+    color: white;
+
+    max-width: 100%;
+    overflow-x: hidden;
+
+    display: flex;
+
+}
+
+
+header {
+
+    width: 100vw;
+    height: 20vh;
+
+    display: flex;
+
+    margin: 0;
+    padding: 0;
+}
+
+
+
+
+
+
+/* BEGIN DESKTOP NAV */
+
+.mainNav {
+    /* master nav container */
+    margin: 0;
+    padding: 0;
+
+    position: fixed;
+    top: 0;
+    border-bottom: 10px solid black;
+    z-index: 100;
+    width: 100%;
+    height: 21vh;
+    display: flex;
+
+    /*background-image: linear-gradient(to top, black, rgb(250, 209, 23), black, rgb(236, 30, 30), black, rgb(63, 255, 197), black, rgb(234, 0, 255), black, rgb(255, 179, 0), black, rgb(156, 25, 25), black, rgb(117, 255, 213), black, rgb(109, 111, 255) ); */
+    background-image: url(/Images/navBG2.jpg);
+    background-size: cover;
+    background-position: 0% 80%;
+}
+
+
+
+
+.mainNavUnorderedList {
+    /* main list for desktop size nav */
+
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+
+
+
+.mainNavUnorderedList li {
+    /* style that applies to each list item in the nav, NOT including rainbow record */
+    height: 100%;
+    width: 15%;
+}
+
+.mainNavUnorderedList a {
+    /* styles the individual <a> link tags in the <li> tags in the nav <ul> list  */
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 100%;
+    width: 100%;
+    text-decoration: none;
+    color: white;
+}
+
+.navHomeCircleLink {
+    /* link for the rainbow record image */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    display: block;
+}
+
+
+.navHomeCircleCenter {
+    /* gradiant Circle in middle of rainbow record */
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient(to bottom, rgb(216, 17, 17), rgb(93, 206, 174));
+
+    z-index: 2;
+
+    border: 10px solid black;
+    border-radius: 50%;
+
+    height: 75px;
+    width: 75px;
+
+
+
+    transform: translateY(11vh);
+
+
+}
+
+.navHomeCircleCenter>span {
+    /* v4 text inside rainbow record */
+    color: rgb(255, 210, 75);
+    text-shadow: 3px 3px 2px rgb(250, 0, 0);
+    font-family: "Limelight";
+    ;
+}
+
+
+
+.navHomeImage {
+    /* rainbow record */
+
+    display: flex;
+    position: absolute;
+
+    height: auto;
+    width: auto;
+
+    max-width: 15vw;
+    min-width: 7vw;
+    z-index: 1;
+
+    filter: drop-shadow(0px 0px 50px rgba(255, 235, 59, 0.7));
+
+}
+
+
+
+.navLink {
+    /* styles text on the nav links, about us, etc. */
+    font-family: "Cherry Bomb One";
+    text-shadow: 5px 5px 2px black;
+    font-size: 2.5vw;
+    font-weight: auto;
+    transition: ease-in-out .25s;
+}
+
+/* Nav link hover AND keyboard focus */
+.navLink>a:hover>span,
+.navLink>a:focus>span {
+    font-size: 3.2vw;
+    color: rgb(255, 210, 75);
+    text-shadow: 3px 3px 2px rgb(250, 0, 0);
+    transition: ease-in-out 0.25s;
+    outline: none;
+}
+
+/*END normal NAV */
+
+
+
+/*begin nav quadrants */
+
+
+
+.radial-links {
+    position: absolute;
+    top: 120%;
+    left: 50%;
+    width: 20vw;
+    /* instead of fixed 325px */
+    height: 20vw;
+    /* keeps circle shape */
+    max-width: 325px;
+    /* optional limit */
+    max-height: 325px;
+    transform: translate(-50%, -50%) rotate(0deg);
+    pointer-events: none;
+    z-index: 0;
+    border-radius: 50%;
+    background-image: url(/Images/rainbow\ gradient.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: 2px solid black;
+    filter: drop-shadow(1px 1px 50px white);
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+
+
+/* Wedge links */
+.radial-link {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    pointer-events: auto;
+
+}
+
+/* Slice borders */
+.radial-link::before {
+    content: '';
+    position: absolute;
+    width: 50%;
+    height: 50%;
+    top: 25%;
+    left: 25%;
+    background: transparent;
+    border-radius: 50%;
+    transform-origin: center;
+
+
+}
+
+
+/* Rotate each slice border */
+.radial-link-1::before {
+    transform: rotate(0deg);
+}
+
+.radial-link-2::before {
+    transform: rotate(90deg);
+}
+
+.radial-link-3::before {
+    transform: rotate(180deg);
+}
+
+.radial-link-4::before {
+    transform: rotate(270deg);
+}
+
+
+
+
+/* Curved text for each slice using letters */
+.radial-link span {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    pointer-events: none;
+
+    color: white;
+
+    font-family: 'merriweather';
+
+}
+
+
+
+
+/* Slice-specific curved text positioning */
+.radial-link-1 span::before {
+    transform: rotate(0deg);
+}
+
+.radial-link-2 span::before {
+    transform: rotate(90deg);
+}
+
+.radial-link-3 span::before {
+    transform: rotate(180deg);
+}
+
+.radial-link-4 span::before {
+    transform: rotate(270deg);
+}
+
+/* Keep record on top */
+.navHomeCircleLink {
+    position: relative;
+    z-index: 1;
+}
+
+
+
+
+
+/*end nav quadrants */
+
+
+
+
+
+
+
+
+
+
+/*END DESKTOP NAV */
+
+
+
+/* BEGIN MOBILE NAV... USE MEDIA QUERIES AS MASTER CONTAINTER SINCE MOBILE NAV ONLY DISPLAYS IN SMALL */
+@media (min-width: 991px) {
+    /* hides mobile nav and hamburger on screens larger than 990 */
+
+    .mobile-menu-toggle {
+        display: none;
+    }
+
+    .mobile-nav {
+        display: none;
+    }
+
+
+}
+
+/* MOBILE NAV ACTIVE STYLES.... what will show when the mobile nav is shown...  */
+
+.mobile-static-icon {
+    display: none;
+}
+
+
+@media (max-width: 768px) {
+
+    .mobileNavWrapper {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 20vh;
+        width: 100vw;
+        z-index: 300;
+    }
+
+    .movileNavRainBowRecordMaster {
+        width: 100%;
+        height: 20vh;
+        position: fixed;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .movileNavRainBowRecordMaster>a>h1 {
+        color: white;
+        position: absolute;
+        align-self: center;
+        justify-self: center;
+
+        color: rgb(255, 210, 75);
+        text-shadow: 3px 3px 2px rgb(250, 0, 0);
+        font-family: "pacifico";;
+        font-size: 3rem;
+        transform: translateY(1vh);
+        transition: .5s;
+    }
+
+
+    .mobileStaticLink{
+        width: 10%;
+        height: 10%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .mobile-static-icon {
+        position: fixed;
+        display: inline-block;
+        width: 100px;
+        height: 100px;
+    }
+
+    .mobile-menu-toggle {
+        font-size: 2rem;
+        /* size of hamburger */
+        cursor: pointer;
+    }
+
+
+}
+
+
+@media (max-width:991px) {
+    /* BEGIN MOBILE NAV AND Styling all mobile nav links and dropdowns. */
+
+
+
+
+    /* Hamburger container */
+    .mobile-menu-toggle {
+        display: inline-block;
+        position: fixed;
+        top: 4vh;
+        right: 10vw;
+        font-size: 2.5rem;
+        cursor: pointer;
+        z-index: 200;
+        color: white;
+        transition: .5s ease-in-out;
+
+        text-shadow: 0px 0px 30px white;
+    }
+
+    .mobile-menu-toggle:focus {
+        color: rgb(255, 234, 0);
+        transition: .5s ease-in-out;
+        filter: drop-shadow(0px 0px 10px rgb(255, 0, 0));
+        scale: 1.5;
+
+    }
+
+    .mobile-menu-toggle:hover {
+        color: rgb(255, 234, 0);
+        transition: .5s ease-in-out;
+        filter: drop-shadow(0px 0px 10px rgb(255, 0, 0));
+        scale: 1.5;
+
+    }
+
+
+
+    /* Mobile menu container */
+    .mobile-nav {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 90vh;
+        background-color: rgba(0, 0, 0, 0.8);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: 20% 10%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 2rem;
+        z-index: 50;
+        transform: translateY(-100vh);
+        /* start hidden */
+        transition: transform 0.5s ease;
+        /* animate transform */
+    }
+
+    /* Active state: slide down */
+    .mobile-nav.active {
+        transform: translateY(20vh);
+        /* fully visible */
+    }
+
+
+
+
+
+    .mobile-nav a {
+        font-family: 'Cherry Bomb One';
+        font-size: 3rem;
+        color: white;
+        text-shadow: 1px 1px 10px rgb(255, 0, 0);
+        text-decoration: none;
+        text-align: center;
+    }
+
+
+
+
+    .mobile-nav .navHomeCircleCenter {
+        position: absolute;
+        height: 60px;
+        width: 60px;
+        border: 8px solid black;
+        transform: translateY(6vh);
+        /* adjust vertical position */
+    }
+
+    .mobile-nav .navHomeImage {
+        max-width: 20vw;
+        /* smaller on mobile */
+        z-index: 1;
+        filter: drop-shadow(0px 0px 50px rgba(255, 235, 59, 0.7));
+    }
+
+
+
+}
+
+
+
+/* END MOBILE NAV */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* hide Bootstrap’s default chevron on the trigger */
+.nav-link.dropdown-toggle::after {
+    display: none;
+}
+
+
+/* Target custom dropdown and override Bootstrap */
+.dropdown-menu.custom-dropdown {
+    padding: 0 !important;
+    /* kill white padding */
+    margin: 0;
+    border: 0;
+    border-radius: 0;
+    min-width: 0 !important;
+    /* override Bootstrap's min-width */
+    width: 15vw;
+    /* pick a width */
+    height: 20vh;
+    /* so any gaps aren’t white */
+    list-style: none;
+    background-image: url(/Images/navBG2.jpg);
+    background-position: 10% 40%;
+
+    position: absolute;
+    transform: translateY(21vh) !important;
+}
+
+
+
+/* === Dropdown Items === */
+.dropdown-menu.custom-dropdown .custom-item {
+
+    background-image: url(/Images/navBG2.jpg);
+    width: 100%;
+    height: 10vh;
+    border: none;
+    /* No borders on items */
+    cursor: pointer;
+    /* Indicate clickability */
+    font-size: 1.5vw;
+    border: 2px solid rgb(0, 0, 0);
+    transition: ease-in-out .5s;
+
+}
+
+/* Apply styles to .custom-item when hovered OR when its child is focused */
+.dropdown-menu.custom-dropdown .custom-item:hover,
+.dropdown-menu.custom-dropdown .custom-item:focus-within {
+    background-image: url(/Images/navBG2.jpg);
+    background-position: 50% 70%;
+    font-size: 2vw;
+    outline: none;
+}
+
+.dropdown-menu.custom-dropdown .custom-item:hover .custom-link span,
+.dropdown-menu.custom-dropdown .custom-link:focus span {
+    font-size: 2.5vw;
+    transition: ease-in-out .5s;
+    color: rgb(255, 210, 75);
+    text-shadow: 5px 5px 1px rgb(105, 0, 0);
+    outline: none;
+}
+
+/* Remove default focus outline for all elements */
+*:focus {
+    outline: none;
+}
+
+
+
+
+
+
+/* END NAV */
+
+
+
+
+
+/* BEGIN HERO SECTION */
+
+/* HERO SECTION */
+.hero-section {
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    /* Side by side on larger screens */
+    height: 100vh;
+    /* Take up most of the viewport height */
+    width: 100%;
+    background-image: url(/Images/navBG3.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0% 90%;
+    overflow: hidden;
+}
+
+/* Force equal halves */
+.hero-left {
+    flex: 1;
+    /* Makes both take up 50% each */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2.5rem;
+    height: 90%;
+}
+
+/* Optional test colors */
+.hero-left {
+    display: flex;
+}
+
+
+/* LEFT HALF CONTENT */
+.hero-left-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* Center on mobile */
+    padding: 20px;
+}
+
+@media (min-width: 768px) {
+    .hero-left-content {
+        align-items: flex-start;
+        /* Left-align on medium+ screens */
+    }
+}
+
+/* Tagline */
+.hero-tagline {
+    font-family: "Condiment";
+    font-size: 3vw;
+    color: whitesmoke;
+
+
+    filter: drop-shadow(0px 0px 15px rgb(255, 255, 255));
+}
+
+.hero-tagline>a {
+    text-decoration: none;
+}
+
+.hero-tagline>a>span {
+
+    display: inline-block;
+    font-family: "Pacifico";
+    font-size: 7vw;
+    letter-spacing: -.2rem;
+    color: rgb(255, 191, 0);
+    text-shadow: -5px 5px 5px red, -15px 15px 15px rgb(60, 0, 0), -10px 10px 5px rgb(0, 238, 255);
+
+
+    filter: drop-shadow(0px 0px 35px rgb(0, 38, 255));
+    text-decoration: none;
+    transition: 0.5s ease-in-out;
+
+}
+
+.hero-tagline>a>span:hover {
+
+    transition: .5s ease-in-out;
+
+    font-family: "Pacifico";
+    transform: scale(1.5);
+    letter-spacing: -.2rem;
+    color: rgb(255, 233, 167);
+    text-shadow: -5px 5px 5px rgb(175, 0, 0), -15px 15px 15px rgb(40, 0, 0), -10px 10px 5px rgb(20, 0, 0);
+
+    filter: drop-shadow(0px 0px 50px rgb(255, 0, 0));
+
+
+}
+
+
+
+
+
+
+
+/* Title */
+.hero-title {
+    font-family: "Monoton";
+    font-weight: 500;
+    font-size: 7vw;
+    letter-spacing: .5rem;
+    margin: 0 0 15px 0;
+    color: rgb(255, 191, 0);
+    text-shadow: -5px 5px 5px rgb(250, 0, 0);
+
+
+    filter: drop-shadow(0px 0px 50px rgb(255, 210, 62));
+}
+
+/* Subtitle */
+.subtitleLinks>a {
+    font-family: "Special Elite", system-ui;
+    font-size: 3vw;
+    color: rgba(255, 255, 255, 0.8);
+    text-decoration: none;
+    filter: drop-shadow(2px 2px 5px rgb(224, 245, 255));
+    display: inline-block;
+    /* Needed for transform animations */
+
+
+    transition: .25s ease-in-out;
+
+
+    /* Vibration animation */
+    animation-name: vibrate;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+/* Subtitlte comma span tags */
+.subtitleLinks>span {
+    font-family: "Special Elite", system-ui;
+    font-size: 3vw;
+    color: rgba(255, 255, 255, 0.8);
+    text-decoration: none;
+    filter: drop-shadow(2px 2px 5px rgb(224, 245, 255));
+    display: inline-block;
+    /* Needed for transform animations */
+}
+
+/* Different vibration speeds and slight offsets */
+.subtitleLinks>a:nth-child(1) {
+    animation-duration: 2.15s;
+}
+
+.subtitleLinks>a:nth-child(3) {
+    animation-duration: 4.12s;
+}
+
+.subtitleLinks>a:nth-child(5) {
+    animation-duration: 3.18s;
+}
+
+.subtitleLinks>a:nth-child(7) {
+    animation-duration: 4.50s;
+}
+
+@keyframes vibrate {
+    0% {
+        transform: translate(0, 0) rotate(0deg) scale(1);
+    }
+
+    10% {
+        transform: translate(-1px, 1px) rotate(-1deg) scale(1.02);
+    }
+
+    20% {
+        transform: translate(-1px, -1px) rotate(1deg) scale(0.98);
+    }
+
+    30% {
+        transform: translate(1px, 1px) rotate(0deg) scale(1.01);
+    }
+
+    40% {
+        transform: translate(1px, -1px) rotate(1deg) scale(0.99);
+    }
+
+    50% {
+        transform: translate(-1px, 0px) rotate(-1deg) scale(1.02);
+    }
+
+    60% {
+        transform: translate(0px, 1px) rotate(0deg) scale(1);
+    }
+
+    70% {
+        transform: translate(1px, -1px) rotate(1deg) scale(0.98);
+    }
+
+    80% {
+        transform: translate(-1px, 1px) rotate(-1deg) scale(1.01);
+    }
+
+    90% {
+        transform: translate(1px, 0px) rotate(0deg) scale(1);
+    }
+
+    100% {
+        transform: translate(0, 0) rotate(0deg) scale(1);
+    }
+}
+
+.subtitleLinks>a:hover {
+    align-self: center;
+    color: red;
+    transition: .25s ease-in-out;
+    font-size: 3vw;
+    text-decoration: underline;
+}
+
+
+.hero-right {
+    flex: 1;
+    /* Makes both take up 50% each */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+
+.heroRightVideoContainer {
+    width: 100%;
+    height: 50%;
+}
+
+.heroRightVideoContainer>video {
+    width: 100%;
+    height: 100%;
+}
+
+
+/*End Hero */
+
+
+
+/*BEGIN CTA call to action */
+
+.CTA-section {
+    background-image: url(/Images/navBG2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+    border-top: 10px solid black;
+    border-bottom: 10px solid black;
+    width: 100vw;
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5vw;
+}
+
+
+
+.CTABUTTON {
+    height: 50%;
+    width: 15%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    text-decoration: none;
+    background-image: url(/Images/navBG3.jpeg);
+    background-repeat: none;
+    background-position: 50% 0%;
+    border-radius: 50px;
+    color: rgb(255, 234, 206);
+    text-shadow: 5px 5px 2px black;
+    font-family: 'Cherry Bomb One';
+    font-size: 2vw;
+    transition: .5s;
+    line-height: 4vh;
+}
+
+
+.CTABUTTON:hover {
+    color: rgb(255, 210, 75);
+    text-shadow: 3px 3px 2px rgb(250, 0, 0);
+    transition: ease-in-out 0.25s;
+    outline: none;
+    font-size: 2.5vw;
+    line-height: 6vh;
+
+
+    background-position: 50% 100%;
+}
+
+
+/*END CTA call to action */
+
+/* BEGIN Our Story Section */
+
+
+.ourStory-Section {
+    background-image: url(/Images/storyBG.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: 155vh;
+    max-height: 200vh;
+    width: 100vw;
+    border-bottom: 10px solid black;
+    overflow: hidden;
+}
+
+.storyTitle {
+    min-width: 15%;
+    /* smallest allowed */
+    max-width: 70%;
+    /* largest allowed */
+    min-height: 25%;
+    max-height: 50%;
+    background-color: rgba(0, 0, 0, 0.75);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    justify-items: center;
+    border-radius: 30px;
+    font-family: 'Monoton';
+    font-size: 5vw;
+    border: 10px dotted #fced66;
+    font-weight: 500;
+    letter-spacing: .5rem;
+
+    color: rgb(255, 211, 80);
+    text-shadow: -5px 5px 10px red, 10px 10px 5px rgb(60, 0, 0), -10px 10px 50px rgb(140, 165, 255);
+
+
+    filter: drop-shadow(0px 0px 50px rgb(255, 242, 140));
+
+
+    transform: translateY(-16vh);
+}
+
+
+@media (max-width: 820px) {
+    .storyTitle {
+        transform: translateY(-5vw);
+
+    }
+}
+
+@media (max-width: 524px) {
+    .storyTitle {
+        font-size: 8vw;
+
+    }
+}
+
+
+.storyParagraph {
+    font-family: "Special Elite", system-ui;
+    background-color: rgba(0, 0, 0, 0.85);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transform: translateY(10vh);
+}
+
+@media (max-width: 710px) {
+    .storyParagraph {
+        transform: translateY(-6vh);
+        font-size: 1vw;
+
+    }
+}
+
+@media (max-width: 461px) {
+    .storyParagraph {
+        font-size: 17px !important;
+
+    }
+}
+
+
+
+.storyParagraph>span {
+    color: rgb(255, 255, 255);
+    align-self: start;
+    font-family: "condiment";
+    letter-spacing: 5px;
+}
+
+
+
+/* END Our Story Section */
+
+
+
+/* Begin V4 Selection Section */
+
+.V4Selection {
+    background-color: rgb(42, 21, 21);
+    width: 100vw;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 50px;
+    padding-right: 50px;
+    gap: 20px;
+    
+}
+
+
+
+/* END V4 Selection Section */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* RESPONSIVE: hero section on small screens */
+@media (max-width: 768px) {
+    .hero-section {
+
+        height: 200vh;
+        display: flex;
+        flex-direction: column;
+        /* Stack vertically */
+        align-items: center;
+        justify-content: center;
+
+        flex-wrap: nowrap;
+    }
+
+    .hero-left {
+        width: 100%;
+        /* Each takes full width */
+        height: 100%;
+    }
+
+
+    .hero-right {
+        width: 100%;
+        /* Each takes full width */
+        height: 100%;
+    }
+
+
+
+    .hero-tagline {
+        font-family: "Condiment";
+        font-size: 6vw;
+        color: whitesmoke;
+        filter: drop-shadow(0px 0px 15px rgb(255, 255, 255));
+    }
+
+    .hero-tagline>span {
+
+        font-family: "Pacifico";
+        font-size: 15vw;
+        letter-spacing: .5rem;
+        color: rgb(255, 191, 0);
+        text-shadow: -5px 5px 5px red, -15px 15px 15px rgb(60, 0, 0), -10px 10px 5px black;
+
+
+        filter: drop-shadow(0px 0px 35px rgb(0, 38, 255));
+
+    }
+
+    .hero-title {
+        font-family: "Monoton";
+        font-weight: 500;
+        font-size: 12vw;
+        letter-spacing: .5rem;
+        margin: 0 0 15px 0;
+        color: rgb(255, 191, 0);
+        text-shadow: -5px 5px 5px rgb(250, 0, 0);
+
+
+        filter: drop-shadow(0px 0px 50px rgb(255, 210, 62));
+
+
+    }
+
+
+    .subtitleLinks>a {
+        font-family: "Special Elite", system-ui;
+        font-size: 6vw;
+        color: rgba(255, 255, 255, 0.8);
+        text-decoration: none;
+        filter: drop-shadow(2px 2px 5px rgb(224, 245, 255));
+        display: inline-block;
+        /* Needed for transform animations */
+
+
+        transition: .25s ease-in-out;
+
+
+        /* Vibration animation */
+        animation-name: vibrate;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* BEGIN MEDIA QUERIES FOR NAVHOMECIRCLECENTER RAINBOW RECORD LINK/IMAGE */
+
+/* EXTA Small devices... DOES NOT DISPLAY RECORD HOME IMAGES (≤767px) */
+@media (max-width: 768px) {
+
+    .navHomeCircleCenter,
+    .navHomeImage {
+        display: none !important;
+    }
+}
+
+/* Medium devices BEGINS TO DISPLAY RECORD HOME IMAAGE (≥768px) */
+@media (min-width: 768px) {
+
+
+    .navHomeCircleCenter {
+        width: 50px;
+        height: 50px;
+        border: 3px solid black;
+    }
+
+    .navHomeCircleCenter>span {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 70px;
+        transform: translateY(2vh);
+    }
+}
+
+/* in between medium and large screens */
+@media (min-width: 820px) {
+
+
+
+    .navHomeCircleCenter {
+        width: 50px;
+        height: 50px;
+        border: 3px solid black;
+    }
+
+    .navHomeCircleCenter>span {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 75px;
+    }
+}
+
+/* Large devices (≥992px) */
+@media (min-width: 992px) {
+
+
+    .navHomeCircleCenter {
+        width: 65px;
+        height: 65px;
+        border: 3px solid black;
+    }
+
+    .navHomeCircleCenter>span {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 80px;
+        transform: translateY(2vh);
+    }
+}
+
+/* between large and extra Large devices XL devices (≥1175px) */
+@media (min-width: 1175px) {
+
+
+    .navHomeCircleCenter {
+        width: 70px;
+        height: 70px;
+        border: 3px solid black;
+        transform: translateY(11vh);
+    }
+
+    .navHomeCircleCenter>span {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 80px;
+        transform: translateY(2vh);
+    }
+}
+
+/* extra Large devices XL devices (≥1200) */
+@media (min-width: 1200px) {
+
+
+
+    .navHomeCircleCenter {
+        width: 75px;
+        height: 75px;
+        border: 3px solid black;
+        transform: translateY(12vh);
+    }
+
+    .navHomeCircleCenter>span {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 85px;
+        transform: translateY(2vh);
+    }
+}
+
+/* extra Large devices XL devices (≥1270) */
+@media (min-width:1270px) {
+
+
+
+    .navHomeCircleCenter {
+        width: 75px;
+        height: 75px;
+        border: 3px solid black;
+        transform: translateY(14vh);
+    }
+
+    .navHomeCircleCenter>span {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 105px;
+        transform: translateY(3vh);
+    }
+}
+
+/* extra extra Large devices XXL devices (≥1400px) */
+@media (min-width:1400px) {
+
+
+    .navHomeCircleCenter {
+        width: 80px;
+        height: 80px;
+        border: 3px solid black;
+        transform: translateY(15vh);
+    }
+
+    .navHomeCircleCenter>span {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 115px;
+        transform: translateY(2vh);
+    }
+}
+
+/* extra extra Large devices XXL devices (≥1470px) */
+@media (min-width:1470px) {
+
+
+    .navHomeCircleCenter {
+        width: 85px;
+        height: 85px;
+        border: 3px solid black;
+        transform: translateY(17vh);
+    }
+
+    .navHomeCircleCenter>span {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 125px;
+        transform: translateY(3vh);
+    }
+}
+
+/* extra extra Large devices XXL devices (≥1580px) */
+@media (min-width:1580px) {
+
+
+    .navHomeCircleCenter {
+        width: 90px;
+        height: 90px;
+        border: 3px solid black;
+        transform: translateY(19vh);
+    }
+
+    .navHomeCircleCenter>span {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 120px;
+        transform: translateY(3vh);
+    }
+}
+
+/* extra extra Large devices XXL devices (≥1680px) */
+@media (min-width:1680px) {
+
+
+    .navHomeCircleCenter {
+        width: 100px;
+        height: 100px;
+        border: 3px solid black;
+        transform: translateY(20vh);
+    }
+
+    .navHomeCircleCenter>span {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 125px;
+        transform: translateY(3vh);
+    }
+}
+
+/* extra extra Large devices XXL devices (≥1770px) */
+@media (min-width:1740px) {
+
+
+    .navHomeCircleCenter {
+        width: 105px;
+        height: 105px;
+        border: 3px solid black;
+        transform: translateY(22vh);
+    }
+
+    .navHomeCircleCenter>span {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 135px;
+        transform: translateY(3vh);
+    }
+}
+
+/* extra extra Large devices XXL devices (≥1875px) */
+@media (min-width:1875px) {
+
+
+
+    .navHomeCircleCenter {
+        width: 110px;
+        height: 110px;
+        border: 3px solid black;
+        transform: translateY(24vh);
+    }
+
+    .navHomeCircleCenter>span {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 135px;
+        transform: translateY(1vh);
+    }
+}
+
+/* extra extra Large devices XXL devices (≥1920px) */
+@media (min-width:1920px) {
+
+    .navHomeImage {
+        transform: translateY(11vh);
+    }
+
+    .navHomeCircleCenter {
+        width: 115px;
+        height: 115px;
+        border: 3px solid black;
+        transform: translateY(11vh);
+    }
+
+    .navHomeCircleCenter>span {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        font-size: 150px;
+        transform: translateY(1vh);
+    }
+}
+
+/* END MEDIA QUERIES FOR NAVHOMECIRCLECENTER RAINBOW RECORD LINK/IMAGE */
+
+
+
+/* By default, hide radial links */
+.radial-links {
+    display: none;
+}
+
+/* Show on large screens and up (>=1536) */
+@media (min-width: 1536px) {
+    .radial-links {
+        display: block;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Hide default nav links except for the rainbow record for smaller screens */
+@media (max-width: 991px) {
+    .mainNavUnorderedList li:not(.navHomeCenterItem) {
+        display: none;
+        /* Hide links */
+    }
+
+    /* Optionally make rainbow record smaller on mobile */
+    .navHomeCircleCenter {
+        width: 50px;
+        height: 50px;
+        transform: translateY(5vh);
+    }
+
+    .navHomeCircleCenter>span {
+        font-size: 50px;
+    }
+
+    .radial-links {
+        display: none;
+        /* hide radial links on small screens */
+    }
+
+    .navHomeCenterItem {
+        transform: translateY(-6vh);
+        scale: 1 !important;
+    }
+
+
+
+}
