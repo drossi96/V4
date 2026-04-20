@@ -1,0 +1,674 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>HTML 5 Boilerplate</title>
+
+
+  <!-- google icons below -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+  <!-- below googlefonts -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Special+Elite&family=Limelight&family=Fascinate&family=Monoton&family=Kavoon&family=Rubik+Wet+Paint&family=Lobster&family=Pacifico&family=Cherry+Bomb+One&family=Diplomata+SC&family=Bungee+Hairline&family=Faster+One&family=Condiment&family=Meddon&family=Rubik+Glitch&family=Rubik+Puddles&display=swap"
+    rel="stylesheet">
+
+  <!-- below bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+
+  <link rel="stylesheet" href="/CSS/V4vibesPage.css">
+
+</head>
+
+<body>
+
+  <main>
+
+
+
+    <div class="TOPmessagePopUp"> <!--BEGIN top message popup ONLY-->
+      We've Built Our Site... Stay Tuned For Our Store...
+
+      <button class="TOPmessagePopUpCLOSE">
+        <span class="material-icons">close</span>
+      </button>
+
+    </div> <!--END top message popup ONLY-->
+
+
+    <div class="fullPagePopUp"> <!--BEGIN FULL PAGE POPUP -->
+      <div class="fullPagePopUpContent">
+
+        <button class="fullPagePopUpClose">
+          <span class="material-icons">close</span>
+        </button>
+
+        <p>
+          We're currently building our storefront. <br> <br> Take a look around our site to see what we're all about,
+          how to contact us and invite us to your events and outdoor markets
+          and be on the lookout for updates on our storefront!
+        </p>
+
+        xoxo<img src="/Images/v4LogoSMALL.png" alt="" class="ImgLogoSMALL">
+
+      </div>
+    </div> <!--end full page pop up-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <header>
+      <nav class="mainNav withPopUp" aria-label="Main Navigation">
+
+        <ul class="mainNavUnorderedList"> <!--mainNavList-->
+
+          <li class="navLink"> <!--HOME NAV LINK-->
+            <a href="/V4Home.html">
+              <span>Home</span>
+            </a>
+          </li>
+
+
+
+          <li class="navLink nav-item dropdown"> <!--About us item-->
+
+            <a class="nav-link" href="#ourStorySec" data-bs-toggle="dropdown" aria-expanded="false">
+              <!-- top nav link trigger -->
+              <span>About Us</span>
+            </a>
+
+            <ul class="dropdown-menu custom-dropdown"> <!-- drop down menu -->
+
+              <li class="custom-item"> <!-- drop down item -->
+                <a class="custom-link" href="#ourStorySec">
+                  <span>Our Story</span>
+                </a>
+              </li>
+
+              <li class="custom-item"> <!-- drop down item -->
+                <a class="custom-link" href="/V4ContactUs.html">
+                  <span>Invite Us</span>
+                </a>
+              </li>
+
+              <li class="custom-item"> <!-- drop down item -->
+                <a class="custom-link" href="#selectionSec">
+                  <span> <span>'V4'</span> is For: </span>
+                </a>
+              </li>
+
+            </ul>
+
+          </li> <!--end about us nav link dropdown menu-->
+
+
+
+          <li class="navHomeCenterItem position-relative"> <!-- circular center rainbow record link-->
+
+            <div class="WRAPPER">
+
+              <a class="navHomeCircleLink" href="#">
+                <div class="navHomeCircleCenter">
+                  <span>V4</span>
+                </div>
+                <img class="navHomeImage" src="/Images/V4 Home Record Circle.png" alt="Record Image" id="recordImage">
+              </a>
+
+              <div class="radial-links"> <!-- rainbow Radial Links behind the center logo  -->
+                <a href="#link1" class="radial-link radial-link-1"><span>* <br> V I N Y L </span></a>
+                <a href="#link2" class="radial-link radial-link-2"><span>* <br> V I D E O</span></a>
+                <a href="#link3" class="radial-link radial-link-3"><span>* <br> V O G U E</span></a>
+                <a href="#link4" class="radial-link radial-link-4"><span>* <br> V I B E S</span></a>
+              </div>
+
+            </div>
+
+
+          </li> <!-- END circular center rainbow record link-->
+
+
+          <li class="navLink nav-item dropdown"> <!--Collections item-->
+
+            <a class="nav-link" href="#" data-bs-toggle="dropdown" aria-expanded="false"> <!-- top nav link trigger -->
+              <span>Collections</span>
+            </a>
+
+            <ul class="dropdown-menu custom-dropdown"> <!-- drop down menu -->
+
+              <li class="custom-item"> <!-- drop down item -->
+                <a class="custom-link" href="/V4vinylPage.html">
+                  <span>Vinyl</span>
+                </a>
+              </li>
+
+              <li class="custom-item"> <!-- drop down item -->
+                <a class="custom-link" href="/V4videoPage.html">
+                  <span>Video</span>
+                </a>
+              </li>
+
+              <li class="custom-item"> <!-- drop down item -->
+                <a class="custom-link" href="/V4voguePage.html">
+                  <span> Vogue </span>
+                </a>
+              </li>
+
+              <li class="custom-item"> <!-- drop down item -->
+                <a class="custom-link" href="/V4vibesPage.html">
+                  <span> Vibes </span>
+                </a>
+              </li>
+
+            </ul>
+
+          </li> <!--end collections dropdown menu-->
+
+          <li class="navLink"> <!-- contact link -->
+            <a href="/V4ContactUs.html">
+              <span>Contact</span>
+            </a>
+          </li>
+        </ul>
+
+
+      </nav> <!--end desktop nav-->
+
+
+
+      <!-- BEGIN MOBILE nav -->
+
+
+      <div class="mobileNavWrapper">
+
+        <div class="mobileNavRainBowRecordMaster">
+          <a class="mobileStaticLink" href="" tabindex="0">
+            <img src="/Images/V4 Home Record Circle.png" alt="Static Icon" class="mobile-static-icon">
+            <h1>V4</h1>
+          </a>
+        </div>
+
+        <span class="mobile-menu-toggle" tabindex="0">&#9776;</span>
+
+      </div>
+
+
+      <!-- Mobile nav links -->
+      <div class="mobile-nav">
+
+        <a href="/">Home</a>
+        <li class="mobileNavLink nav-item dropdown MobileNavItemDropDown"> <!--mobile nav About us item-->
+
+          <a class="mobileAboutUs dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">
+            <!-- top nav link trigger -->
+            <span>About Us</span>
+          </a>
+
+          <ul class="mobile-custom-dropdown"> <!-- drop down menu -->
+
+            <li class="custom-item mobile-nav-custom-item"> <!-- drop down item -->
+              <a class="custom-link" href="#">
+                <span>Our Story</span>
+              </a>
+            </li>
+
+            <li class="custom-item"> <!-- drop down item -->
+              <a class="custom-link" href="#">
+                <span>Our Team</span>
+              </a>
+            </li>
+
+            <li class="custom-item"> <!-- drop down item -->
+              <a class="custom-link" href="#">
+                <span> <span>'V4'</span> is For: </span>
+              </a>
+            </li>
+
+          </ul>
+
+        </li> <!--end about us mobile nav link dropdown menu-->
+
+
+        <a class="mobile-nav-link" href="/blog">Blog</a>
+        <a class="mobile-nav-link" href="/contact">Contact</a>
+      </div> <!--end mobile nav-->
+
+    </header> <!-- end complete header... including nav and mobile nav-->
+
+
+
+    <!--BEGIN CONTENT PROPER... including collection page content and hero section-->
+
+
+    <!-- <section class="content-split container-fluid">       <--------Buildable half screen 50/50 content div
+      <div class="row align-items-center">
+
+        <div class="col-12 col-md-6 split-left">
+          Left content
+        </div>
+
+        <div class="col-12 col-md-6 split-right">
+          Right content
+        </div>
+
+      </div>
+    </section> --> <!--buildable split 50/50 content div-->
+
+
+    <!-- 
+    full width content block....
+
+    <section class="content-centered container-fluid">        <--------Buildable full screen content div
+      <div class="d-flex flex-column flex-lg-row 
+        justify-content-center align-items-center min-vh-100">
+
+          <div class="center-piece">
+            Content A
+          </div>
+
+          <div class="center-piece">
+            Content B
+          </div>
+      </div>
+
+    </section> --> <!--Buildable full screen content div-->
+
+
+
+
+
+
+
+
+
+
+    <section class="fullWidthSection container-fluid collectionHeroMaster">
+
+
+
+      <video class="heroVidBG" src="/Videos/Vibes.mp4" autoplay muted playsinline loop>
+
+      </video>
+
+
+
+
+
+      <div class="vinylCollectionHero flex-grow-11">
+        <h1>Vibes</h1>
+        <h4>the Rule of Cool</h4>
+      </div>
+
+      <div class="heroButtons">
+
+        <a class="heroBtn storeLink" href="shop">Shop Our Vibes Collections</a>
+        <a class="heroBtn" href="#collectionBlurbSEC">Learn More</a>
+
+      </div>
+
+
+    </section>
+
+    <section class="fullWidthSection container-fluid collectionBlurb" id="collectionBlurbSEC">
+
+
+
+      <video class="vidTest" src="/Videos/.mp4.MP4" autoplay muted playsinline loop></video>
+
+      <p class="blurbPG">At V4, <br>We’re passionate about all things rad—whether it’s sweet, sweet swag like stickers, patches, and pins, 
+         analogue equipment like record players and polaroid cameras, and even eye-catching statement pieces like lava lamps, light-up disco balls, jukeboxes, vintage decor, and unique collectibles that bring
+         personality, nostalgia, and energy into any space or collection.
+
+         <br>
+         <br>
+
+         There’s no hard and fast rule—but if it’s got character attitude, or just that undeniable spark that evokes energy, it belongs here;
+          we’re driven by a love for the unexpected, curating everything from everyday gems to standout statement pieces that tell stories, turn heads, and keep the culture alive.
+      </p>
+
+    </section>
+
+
+
+    <!-- HERO SECTION WRAPPER -->
+
+
+    <!-- HERO SECTION -->
+    <section class="container-fluid hero-section">
+      <!-- LEFT HALF CONTENT -->
+      <div class="hero-left">
+        <div class="hero-left-content text-md-start">
+          <p class="hero-tagline">
+            We Are . . .
+            <a class="V4Hero" href="/V4Home.html">
+              <span> V4</span>
+            </a>
+            . . . We Are :
+          </p>
+          <h1 class="hero-title"> Vintage <br>Vendors</h1>
+
+          <div class="subtitleLinks">
+            <a href="V4vinylPage.html" class="hero-subtitle">Vinyl </a>
+            <span>,</span>
+            <a href="/V4videoPage.html" class="hero-subtitle">Video</a>
+            <span>,</span>
+            <a href="V4vinylPage.html" class="hero-subtitle">Vogue</a>
+            <span>,</span>
+            <a href="V4vibesPage.html" class="hero-subtitle">Vibes</a>
+          </div>
+
+        </div>
+      </div>
+
+
+      <div class="hero-right">
+        <div class="heroRightVideoContainer">
+
+          <div class="videoScreen">
+            <video src="/Videos/DC market Edit.mp4.mp4" autoplay muted playsinline loop></video>
+          </div>
+
+          <img src="/Images/TVIMG1.png" class="videoFrame" alt="TV frame">
+
+        </div>
+      </div>
+
+
+
+    </section>
+
+    <section class="CTA-section">
+
+      <!-- VIDEO BACKGROUND LAYER -->
+      <div class="cta-bg-video">
+        <video class="bg-video active" src="/Videos/V4 edit.mp4.mp4" autoplay muted loop playsinline></video>
+        <video class="bg-video storyVIDEO" src="/Videos/comic.mp4" autoplay muted loop playsinline></video>
+        <video class="bg-video marketVIDEO" src="/Videos/Crowd.mov" autoplay muted loop playsinline></video>
+        <video class="bg-video moneyVIDEO" src="/Videos/money1.mp4" autoplay muted loop playsinline></video>
+      </div>
+
+      <!--  ORIGINAL BUTTONS ) -->
+      <a href="#Shop" class="CTABUTTON storeLink"> Shop Our Collections! </a>
+
+      <a href="#ourStorySec" class="CTABUTTON"> Our <br> Story! </a>
+
+      <a href="/V4ContactUs.html" class="CTABUTTON"> Be Social <br> With Us! </a>
+
+      <a href="/V4ContactUs.html" class="CTABUTTON"> Sell <br> To Us! </a>
+
+    </section>
+
+
+
+
+    <section class="ourStory-Section container-fluid p-5" id="ourStorySec"> <!--beginn our story section-->
+
+      <h1 class="storyTitle"> Our Story </h1>
+
+      <p class="storyParagraph p-1 fs-5 fs-md-5 "> <span> FOUNDED BY: </span> College friends who met in guitar class
+        and worked
+        for years behind the counters of Downtown Silver
+        Spring's Record Stores and Guitar Shops, we’ve always lived and
+        breathed music. As avid music lovers and musicians ourselves, the hunt for vinyl, gear, and nostalgia never
+        really stopped — it just grew.
+
+        Now, we’re bringing that passion to vendor markets across the DMV area, curating a mix of modern, retro and
+        vintage
+        treasures: records and turntables, movies and video games, clothing, collectibles, and plenty more. Our
+        mission is simple — to share the joy of timeless music, movies, games, and classic culture with the community
+        that inspires us.
+      </p>
+
+
+
+
+    </section>
+
+
+
+
+
+    <section class="selectionSection" id="selectionSec"> <!-- begin selection section-->
+
+
+      <div class="selectionSectionDiv">
+
+        <h4 class="storySelectionTitle">
+          <span class="hereAtTextOnly"> Here At . . . </span>
+          <span>
+            <a class="V4TextOnly" href="/V4Home.html">V4</a>
+          </span>
+          <br>
+          <span class="vintageVendorsTextOnly"> Vintage Vendors
+            <br>
+          </span> <span class="vTextOnly">"V"</span>
+          <span class="isForTextOnly"> is For : </span>
+        </h4>
+
+
+        <div class="subtitleLinks">
+          <a href="/V4vinylPage.html" class="hero-subtitle">Vinyl </a>
+          <span>,</span>
+          <a href="/V4videoPage.html" class="hero-subtitle">Video</a>
+          <span>,</span>
+          <a href="/V4voguePage.html" class="hero-subtitle">Vogue</a>
+          <span>,</span>
+          <a href="/V4vibesPage.html" class="hero-subtitle">Vibes</a>
+        </div>
+
+        <h3 class="storySelectrionSubTitle"></h3>
+
+
+      </div>
+
+
+
+
+    </section> <!--end selection section-->
+
+
+
+
+    
+
+    <footer class="footerMaster"> <!----BEGIN FOOTER -->
+
+
+      <div class="footerInteriorContainer container">
+
+
+        <div class="FooterColumn">
+          <ul class="FooterUL FUL1">
+            <li class="logoANDName">
+              <h4>
+                <img class="logoFOOTERimg" src="/Images/logoFOOTER.png" alt=""> <span>Vintage Vendors</span>
+              </h4>
+            </li>
+            <li>
+              <p>Vintage Culture for the Community</p>
+              <p>Based in the DMV Area</p>
+            </li>
+          </ul>
+        </div>
+
+
+        <div class="FooterColumn">
+
+
+          <h4>Explore Our Site</h4>
+
+          <ul class="FooterUL FUL2">
+            <li>
+              <a href="/V4Home.html">Home</a>
+            </li>
+
+            <li>
+              <a href="#ourStorySec">Our Story</a>
+            </li>
+
+            <li>
+              <a href="/V4ContactUs.html">Contact Us</a>
+            </li>
+
+          </ul>
+
+        </div>
+
+
+        <div class="FooterColumn">
+
+          <h4>Collections</h4>
+
+          <ul class="FooterUL FUL3">
+
+            <li>
+              <a href="V4vinylPage.html">Vinyl</a>
+            </li>
+
+            <li>
+              <a href="V4videoPage.html">Video</a>
+            </li>
+
+            <li>
+              <a href="/V4voguePage.html">Vogue</a>
+            </li>
+
+            <li>
+              <a href="/V4vibesPage.html">Vibes</a>
+            </li>
+
+          </ul>
+
+        </div>
+
+        <div class="FooterColumn">
+
+          <h4>Connect & Contact</h4>
+
+          <ul class="FooterUL FUL3">
+
+            <li>
+              <a href="V4ContactUs.html">Instagram</a>
+            </li>
+
+            <li>
+              <a href="V4ContactUs.html">Email</a>
+            </li>
+
+            <li>
+              <a href="/V4ContactUs.html">Sell To Us</a>
+            </li>
+
+            <li>
+              <a href="#selectionSec">Shop Our Collections</a>
+            </li>
+
+          </ul>
+
+        </div>
+
+
+
+
+      </div>
+
+      <div class="footerBottomROW container">
+        <p>
+          © 2026 V4 Vintage Vendors | All rights reserved | Website Design: <a
+            href="https://devrossi.com/">devrossi.com</a>
+        </p>
+      </div>
+    </footer>
+
+
+
+
+
+
+    <section class="vinyl-Section"></section>
+
+
+    <section class="video-Section"></section>
+
+
+    <section class="vogue-Section"></section>
+
+
+    <section class="vibes-Section"></section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  </main> <!-- end main -->
+
+
+
+
+</body>
+
+<script src="/JS/V4vibesPage.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js" integrity="sha384-..."
+  crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-..."
+  crossorigin="anonymous"></script>
+
+
+
+</html>
